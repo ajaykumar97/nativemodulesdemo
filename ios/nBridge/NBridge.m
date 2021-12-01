@@ -9,7 +9,6 @@ RCT_EXPORT_METHOD(resolvePromiseWithString:(NSString *)name
                  rejecter:(RCTPromiseRejectBlock)reject)
 {
     return resolve([[@"Supplied name \"" stringByAppendingString:name] stringByAppendingString:@"\" meets the criteria"]);
-  return reject(@"event_failure", @"no event id returned", nil);
 }
 
 RCT_EXPORT_METHOD(rejectPromise:(NSString *)name
